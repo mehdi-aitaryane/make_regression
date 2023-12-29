@@ -8,13 +8,16 @@ The algorithm is based on the concept of linear regression. The goal is to find 
 ## Pseudocode of the Algorithm
 The pseudocode describes the steps of the make_regression function, which takes the number of samples, features, noise, random state, and initialization function as input, and returns the feature and target arrays as output.
 
-make_regression(n_samples, n_features, noise, random_state, init):
+```
+Procedure make_regression:
+  Input: n_samples, n_features, noise, random_state, init:
   set the random seed to random_state
   create weights and bias using init function
   create features using uniform random distribution
   add noise to features using normal random distribution
   create targets using linear function of features, weights, and bias
   return features and targets
+```
 
 ## Modules
 The project contains two modules: datasets.py and plots.py. The datasets.py module has functions to generate and print the regression dataset. The plots.py module has functions to create 2D or 3D plots of the dataset.
